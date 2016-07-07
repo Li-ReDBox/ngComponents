@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="bower_components/angular/angular.js"></script>
+
+  </head>
+  <body>
+
+    <p>Nothing here {{'yet' + '!'}}</p>
+
+    <div ng-controller="main">
+      <greet-user inuser="string literal" bridge="updateHero(data)"></greet-user>
+      <button type="button" name="button" ng-click="getout('outside try')" >Outside</button>
+    </p>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="component.greeting.js"></script>
+
+  </body>
+</html>

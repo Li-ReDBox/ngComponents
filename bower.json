@@ -1,0 +1,24 @@
+{
+  "name": "ngcomponent",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jianfeng Li <jianfeng.li@ersa.edu.au>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "^1.5.7",
+    "angular": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "jasmine-core": "jasmine#^2.4.1",
+    "requirejs": "^2.2.0"
+  }
+}
