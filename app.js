@@ -5,7 +5,7 @@ myapp.controller('main', ['$scope', function($scope) {
     console.log("getout is called");
     console.log(data);
   };
-  $scope.uis = [{title: 'start', class: 'col-md-3', date: new Date('2016-06-01')},
+  $scope.pickers = [{title: 'start', class: 'col-md-3', date: new Date('2016-06-01')},
                 {title: 'end', class: 'col-md-3', date: new Date()}];
 
   $scope.getDates = function(dates) {

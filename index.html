@@ -13,17 +13,17 @@
 
     <p>Components</p>
 
-    <div >
+    <!-- <div >
       <greet-user inuser="string literal" bridge="updateHero(data)"></greet-user>
       <button type="button" name="button" ng-click="getout('outside try')" >Outside</button>
     </p>
-    </div>
+    </div> -->
 
-    <date-range uis="uis" on-update="getDates(dates)"></date-range>
+    <date-pickers pickers="pickers" on-done="getDates(dates)" button-tilte="Search"></date-pickers>
 
     <script src="app.js"></script>
     <!-- <script src="component.greeting.js"></script> -->
-    <script src="components/daterange/daterange_component.js"></script>
-    <script src="components/date-ui/date-ui-component.js"></script>
+    <script src="components/datePickers/date-pickers.js"></script>
+    <script src="components/datePickerUib/date-picker-uib.js"></script>
   </body>
 </html>
