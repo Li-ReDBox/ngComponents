@@ -5,20 +5,25 @@
     <title>My HTML File</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
   </head>
-  <body>
+  <body ng-controller="main">
 
-    <p>Nothing here {{'yet' + '!'}}</p>
+    <p>Components</p>
 
-    <div ng-controller="main">
+    <div >
       <greet-user inuser="string literal" bridge="updateHero(data)"></greet-user>
       <button type="button" name="button" ng-click="getout('outside try')" >Outside</button>
     </p>
     </div>
 
-    <script src="app.js"></script>
-    <script src="component.greeting.js"></script>
+    <date-range uis="uis"></date-range>
 
+    <script src="app.js"></script>
+    <!-- <script src="component.greeting.js"></script> -->
+    <script src="components/daterange/daterange_component.js"></script>
+    <script src="components/date-ui/date-ui-component.js"></script>
   </body>
 </html>

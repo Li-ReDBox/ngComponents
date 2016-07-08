@@ -1,0 +1,10 @@
+<div ng-class="$ctrl.dateClass">
+    <p>{{$ctrl.ui.title}}</p>
+    <p class="input-group">
+        <input type="text" class="form-control" uib-datepicker-popup="{{$ctrl.format}}" ng-model="$ctrl.date" is-open="$ctrl.opened" showWeeks="false" datepicker-options="$ctrl.options" ng-required="true"/>
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="$ctrl.openRangeStart()"><i class="glyphicon glyphicon-calendar"></i></button>
+        </span>
+    </p>
+    <span ng-show="$ctrl.date.$error.invalidDate">Invalid start date.</span>
+</div>
