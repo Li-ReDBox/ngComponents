@@ -1,7 +1,8 @@
 <div ng-class="$ctrl.dateClass">
     <p>{{$ctrl.ui.title}}</p>
     <p class="input-group">
-        <input type="text" class="form-control" uib-datepicker-popup="{{$ctrl.format}}" ng-model="$ctrl.date" is-open="$ctrl.opened" showWeeks="false" datepicker-options="$ctrl.options" ng-required="true"/>
+        <input type="text" class="form-control" uib-datepicker-popup="{{$ctrl.format}}"
+         ng-model="$ctrl.ui.date" is-open="$ctrl.opened" showWeeks="false" datepicker-options="$ctrl.options" ng-required="true" ng-change="$ctrl.changedate()"/>
         <span class="input-group-btn">
             <button type="button" class="btn btn-default" ng-click="$ctrl.openRangeStart()"><i class="glyphicon glyphicon-calendar"></i></button>
         </span>

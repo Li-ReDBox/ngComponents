@@ -10,7 +10,10 @@ angular.module('myApp').
       ctrl.opened = false;
       ctrl.openRangeStart = function () {
         ctrl.opened = true;
-      }
+      };
+      ctrl.changedate = function(){
+         console.log("new date:", ctrl.ui.date);
+      };
     },
     bindings: {
       ui: '<'

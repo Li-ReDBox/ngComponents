@@ -2,7 +2,7 @@
 <html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title>My HTML File</title>
+    <title>Components</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
@@ -19,7 +19,7 @@
     </p>
     </div>
 
-    <date-range uis="uis"></date-range>
+    <date-range uis="uis" on-update="getDates(dates)"></date-range>
 
     <script src="app.js"></script>
     <!-- <script src="component.greeting.js"></script> -->
