@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <title>Components</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  </head>
+  <body ng-controller="main">
+
+    <p>Components</p>
+
+    <!-- <div >
+      <greet-user inuser="string literal" bridge="updateHero(data)"></greet-user>
+      <button type="button" name="button" ng-click="getout('outside try')" >Outside</button>
+    </p>
+    </div> -->
+
+    <date-pickers pickers="pickers" on-done="getDates(dates)" button-tilte="Show us"></date-pickers>
+
+    <script src="app.js"></script>
+    <!-- <script src="component.greeting.js"></script> -->
+    <script src="components/datePickers/date-pickers.js"></script>
+    <script src="components/datePickerUib/date-picker-uib.js"></script>
+    <script>
+      var demo = angular.module('demo', ['myApp']);
+      demo.controller('main', ['$scope', function($scope) {
+        $scope.pickers = [{title: 'start', class: 'col-md-3', date: new Date('2016-05-01'), minDate: new Date(2016, 4, 1)},
+                      {title: 'end', class: 'col-md-3', date: new Date()}];
+
+        $scope.getDates = function(dates) {
+          console.log(dates);
+          // Assume we have only two, and 0 should earlier than 1:
+          if (dates[0] > dates[1]) {
+            alert(dates[0] + " is later than " + dates[1]);
+          }
+        }
+      }]);
+
+    </script>
+  </body>
+</html>

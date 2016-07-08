@@ -9,14 +9,13 @@ angular.module('myApp').
 
       var ctrl = this;
       angular.forEach(defaults, function(value, key) {
-        if (!ctrl.picker.hasOwnProperty(key)) {
+        if (!(key in ctrl.picker)) {
           ctrl.picker[key] = value;
         }
       });
 
       ctrl.options = { maxDate: new Date() };
-      if (ctrl.picker.hasOwnProperty('minDate')) {
-        ctrl.picker[key] = value;
+      if ('minDate' in ctrl.picker) {
         ctrl.options['minDate'] = ctrl.picker['minDate'];
       }
 
@@ -27,5 +26,5 @@ angular.module('myApp').
     },
     bindings: {
       picker: '<'
-    },
+    }
 });

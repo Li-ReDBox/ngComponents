@@ -16,9 +16,13 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'bower_components/angular/angular.js',
+      'bower_components/angular-bootstrap/ui-bootstrap.min.js',
+      'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'app.js',
       'component.greeting.js',
+      'components/datePickers/date-pickers.js',
+      'components/datePickerUib/date-picker-uib.js',
       'tests/*.js'
     ],
 
