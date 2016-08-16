@@ -1,4 +1,4 @@
-var myapp = angular.module('myApp', ['ui.bootstrap']);
+var myapp = angular.module('mereUI', ['ui.bootstrap']);
 myapp.controller('main', ['$scope', function($scope) {
   $scope.inuser = {name: "myself"};
   $scope.updateHero = function(data) {

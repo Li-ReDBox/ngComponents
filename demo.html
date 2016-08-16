@@ -5,8 +5,6 @@
     <title>Components</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
   </head>
   <body ng-controller="main">
@@ -20,26 +18,17 @@
     </div> -->
 
     <date-pickers pickers="pickers" on-done="getDates(dates)" button-tilte="Show us"></date-pickers>
+    <cas-dropdowns set-spy="setSpy(spy)" reporter="messenger(selected)" level-data="levelData"></cas-dropdowns>
+    <button type="button" class="btn btn-default" ng-click="showSpyReport()">Show spy report</button>
+    <button type="button" class="btn btn-default" onclick="alert('No drama: out of angular js')">None ng click will not cause digest cycle</button>
 
-    <script src="app.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="mere-ui.js"></script>
     <!-- <script src="component.greeting.js"></script> -->
-    <script src="components/datePickers/date-pickers.js"></script>
-    <script src="components/datePickerUib/date-picker-uib.js"></script>
-    <script>
-      var demo = angular.module('demo', ['myApp']);
-      demo.controller('main', ['$scope', function($scope) {
-        $scope.pickers = [{title: 'start', class: 'col-md-3', date: new Date('2016-05-01'), minDate: new Date(2016, 4, 1)},
-                      {title: 'end', class: 'col-md-3', date: new Date()}];
-
-        $scope.getDates = function(dates) {
-          console.log(dates);
-          // Assume we have only two, and 0 should earlier than 1:
-          if (dates[0] > dates[1]) {
-            alert(dates[0] + " is later than " + dates[1]);
-          }
-        }
-      }]);
-
-    </script>
+    <!-- <script src="components/datePickers/date-pickers.js"></script>
+    <script src="components/datePickerUib/date-picker-uib.js"></script> -->
+    <script src="components/casDropdns/casdropdowns.js"></script>
+    <script src="demo.js"></script>
   </body>
 </html>

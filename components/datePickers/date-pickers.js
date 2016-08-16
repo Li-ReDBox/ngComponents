@@ -1,4 +1,4 @@
-angular.module('myApp').
+angular.module('mereUI').
   component('datePickers', {
     templateUrl: 'components/datePickers/date-pickers.html',
     controller: function DateRangeController() {
