@@ -5,12 +5,30 @@
   },
   "scripts": {
     "dev": "node server.js",
-    "test": "karma start karma.conf.js --single-run"
+    "test": "karma start karma.conf.js --single-run",
+    "lint": "eslint *.js components tests"
   },
   "devDependencies": {
+    "eslint": "^3.3.1",
     "jasmine-core": "^2.4.1",
     "karma": "^1.1.0",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "amd": true,
+      "jasmine": true
+    },
+    "globals": {
+      "angular": true,
+      "module": true,
+      "inject": true
+    },
+    "extends": ["eslint:recommended"],
+    "rules": {
+      "no-console": "off"
+    }
   }
 }

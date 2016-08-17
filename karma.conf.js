@@ -19,7 +19,7 @@ module.exports = function(config) {
       'bower_components/angular-bootstrap/ui-bootstrap.min.js',
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'app.js',
+      'mere-ui.js',
       'component.greeting.js',
       'components/datePickers/date-pickers.js',
       'components/datePickerUib/date-picker-uib.js',

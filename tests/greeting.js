@@ -1,7 +1,7 @@
 describe('component: greetUser', function() {
   var $componentController;
 
-  beforeEach(module('myApp'));
+  beforeEach(module('mereUI'));
   beforeEach(inject(function(_$componentController_) {
     $componentController = _$componentController_;
   }));

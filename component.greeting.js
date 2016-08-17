@@ -1,4 +1,4 @@
-angular.module('myApp').
+angular.module('mereUI').
   component('greetUser', {
     template: 'Hello, {{$ctrl.user}}! <button ng-click="$ctrl.doSomething()">try me</button>',
     controller: function GreetUserController() {
